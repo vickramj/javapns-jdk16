@@ -42,13 +42,20 @@
       		<scope>test</scope>
     	</dependency>
     
-		<!-- logging -->
+<!-- 		<!-- logging -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.12</version>
-		</dependency>
-	
+		</dependency> -->
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j18-impl -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j18-impl</artifactId>
+            <version>2.15.0</version>
+            <scope>test</scope>
+        </dependency>
+		
 	</dependencies>
 	
 	<build>
