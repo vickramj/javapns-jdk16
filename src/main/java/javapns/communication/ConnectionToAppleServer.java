@@ -2,7 +2,7 @@ package javapns.communication;
 
 import javapns.communication.exceptions.CommunicationException;
 import javapns.communication.exceptions.KeystoreException;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 import javax.net.ssl.*;
 import java.io.IOException;
@@ -23,7 +23,7 @@ import java.security.KeyStore;
  */
 public abstract class ConnectionToAppleServer {
 
-	protected static final Logger logger = Logger.getLogger(ConnectionToAppleServer.class);
+	protected static final Logger logger = org.apache.logging.log4j.LogManager.getLogger(ConnectionToAppleServer.class);
 
 	/* The algorithm used by KeyManagerFactory */
 	private static final String ALGORITHM = KeyManagerFactory.getDefaultAlgorithm();

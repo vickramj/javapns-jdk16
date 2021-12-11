@@ -2,7 +2,7 @@ package javapns.notification;
 
 import javapns.notification.exceptions.PayloadMaxSizeExceededException;
 import javapns.notification.exceptions.PayloadMaxSizeProbablyExceededException;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.*;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -23,7 +23,7 @@ public abstract class Payload {
 	/* Character encoding specified by Apple documentation */
 	private static final String DEFAULT_CHARACTER_ENCODING = "UTF-8";
 
-	protected static final Logger logger = Logger.getLogger(Payload.class);
+	protected static final Logger logger = org.apache.logging.log4j.LogManager.getLogger(Payload.class);
 
 	/* The root Payload */
 	private JSONObject payload;

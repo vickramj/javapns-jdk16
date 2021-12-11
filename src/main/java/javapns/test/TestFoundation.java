@@ -3,7 +3,7 @@ package javapns.test;
 import javapns.communication.*;
 import javapns.notification.*;
 
-import org.apache.log4j.*;
+import org.apache.logging.log4j.*;
 
 class TestFoundation {
 
@@ -54,7 +54,7 @@ class TestFoundation {
 	 */
 	public static void configureBasicLogging() {
 		try {
-			BasicConfigurator.configure();
+			// BasicConfigurator.configure();
 		} catch (Exception e) {
 		}
 	}
